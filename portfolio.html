@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Jedediah Lorenzo Mercado</title>
+  <link rel="icon" type="image/png" href="attributes/cat.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo-link"><img src="attributes/lmao.png" alt="logo"></a>
+    <nav>
+      <div class="nav-links">
+        <a href="about.html">about</a>
+        <a href="portfolio.html" class="active">portfolio</a>
+        <a href="contact.html">contact</a>
+      </div>
+    </nav>
+    <div class="socials">
+      <a href="https://github.com/fadearcade" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/jedediah.lorenzo" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/jedediahlrnz" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </header>
+
+  <!-- Portfolio Navigation -->
+  <section class="portfolio-nav">
+    <div class="nav-container">
+      <button class="nav-button active" data-category="all">All Works</button>
+      <button class="nav-button" data-category="websites">Websites</button>
+      <button class="nav-button" data-category="videos">Video Edits</button>
+      <button class="nav-button" data-category="visuals">Visual Edits</button>
+      <button class="nav-button" data-category="photos">Photography</button>
+    </div>
+  </section>
+
+  <!-- Portfolio Sections -->
+  <div class="portfolio-sections">
+    <!-- Websites Section -->
+    <section id="websites" class="portfolio-section">
+      <div class="section-header">
+        <h2>Websites</h2>
+        <p class="section-description">Collection of web development projects showcasing my skills in HTML, CSS, JavaScript, and responsive design.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/actecsc.png" alt="ACTEC Website">
+          </div>
+          <div class="item-overlay">
+            <h3>Mock ACTEC Website</h3>
+            <p>HTML & CSS practice project</p>
+            <a href="https://fadearcade.github.io/ACTEC.github.io/" target="_blank" class="view-project">View Project</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/cilscarouselpic.png" alt="CILS Project">
+          </div>
+          <div class="item-overlay">
+            <h3>CILS</h3>
+            <p>CS/IT Laboratory Scheduler(Static Version)</p>
+            <a href="https://fadearcade.github.io/cilsstaticversion/" target="_blank" class="view-project">View Project</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/firstwebsc.png" alt="HTML Testing Website">
+          </div>
+          <div class="item-overlay">
+            <h3>HTML Testing Website</h3>
+            <p>HTML practice project</p>
+            <a href="https://fadearcade.github.io/1stestweb/" target="_blank" class="view-project">View Project</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/mathcalc.png" alt="ACTEC Website">
+          </div>
+          <div class="item-overlay">
+            <h3>Online Calculator</h3>
+            <p>basic calculator using HTML, CSS, and JavaScript</p>
+            <a href="https://fadearcade.github.io/online-calculator/" target="_blank" class="view-project">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Edits Section -->
+    <section id="videos" class="portfolio-section">
+      <div class="section-header">
+        <h2>Video Edits</h2>
+        <p class="section-description">A showcase of my video editing projects, featuring creative storytelling and advanced editing techniques.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/minsancarouselpic.png" alt="Minsan sa MCU">
+          </div>
+          <div class="item-overlay">
+            <h3>Minsan sa MCU</h3>
+            <p>Advanced Multimedia project</p>
+            <a href="attributes/something about mcu final1.mp4" class="view-project" data-type="video">Watch Video</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/ads.png" alt="MCU Ads">
+          </div>
+          <div class="item-overlay">
+            <h3>MCU Ads</h3>
+            <p>Advanced Multimedia project</p>
+            <a href="attributes/MCU_IT_Ad_FinalProject_Mercado.mp4" class="view-project" data-type="video">Watch Video</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/benandren.png" alt="Camera Movements">
+          </div>
+          <div class="item-overlay">
+            <h3>Advanced Multimedia Camera Movements</h3>
+            <p>Advanced Multimedia project</p>
+            <a href="attributes/AdvancedMultimediaCameraMovementsNofilter.mp4" class="view-project" data-type="video">Watch Video</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/casweek.png" alt="Multimedia Reels">
+          </div>
+          <div class="item-overlay">
+            <h3>Advanced Multimedia Reels</h3>
+            <p>Advanced Multimedia project</p>
+            <a href="attributes/Advanced Multimedia Reels (Final).mp4" class="view-project" data-type="video">Watch Video</a>
+          </div>
+        </div>
+      
+
+      <div class="portfolio-item">
+        <div class="item-image">
+          <img src="attributes/adial.png" alt="Multimedia Reels">
+        </div>
+        <div class="item-overlay">
+          <h3>A day in a life</h3>
+          <p>Advanced Multimedia project</p>
+          <a href="attributes/Mercado_Villado-A day in a life.mp4" class="view-project" data-type="video">Watch Video</a>
+          </div>
+        </div>
+      </div>
+      <div class="more-link">
+        <a href="https://www.youtube.com/@ACTEConeTV" target="_blank">Click here for more videos →</a>
+      </div>
+    </section>
+
+    <!-- Visual Edits Section -->
+    <section id="visuals" class="portfolio-section">
+      <div class="section-header">
+        <h2>Visual Edits</h2>
+        <p class="section-description">Digital art and graphic design work showcasing my skills in visual composition and creative editing.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/siklabpic.png" alt="Siklab Visual Edit">
+          </div>
+          <div class="item-overlay">
+            <h3>Siklab</h3>
+            <p>siklab event poster</p>
+            <a href="attributes/siklabpic.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/roboticspic.png" alt="Robotics pic">
+          </div>
+          <div class="item-overlay">
+            <h3>Robotics seminar</h3>
+            <p>poster for the robotics seminar</p>
+            <a href="attributes/roboticspic.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/ballersamsonpic.png" alt="Baller Samson">
+          </div>
+          <div class="item-overlay">
+            <h3>Baller Samson</h3>
+            <p>Patrick Samson poster</p>
+            <a href="attributes/ballersamsonpic.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/issue1.png" alt="issue1">
+          </div>
+          <div class="item-overlay">
+            <h3>mock magazine issue 1</h3>
+            <p>one of my hobbies is to create my own magazine issues</p>
+            <a href="attributes/issue1.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/issue2.png" alt="issue2">
+          </div>
+          <div class="item-overlay">
+            <h3>Issue 2</h3>
+            <p>one of my hobbies is to create my own magazine issues</p>
+            <a href="attributes/issue2.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/issue3.png" alt="issue3">
+          </div>
+          <div class="item-overlay">
+            <h3>Issue 3</h3>
+            <p>one of my hobbies is to create my own magazine issues</p>
+            <a href="attributes/issue3.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/issue4.png" alt="issue4">
+          </div>
+          <div class="item-overlay">
+            <h3>Issue 4</h3>
+            <p>one of my hobbies is to create my own magazine issues</p>
+            <a href="attributes/issue4.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/brochuref.png" alt="issue4">
+          </div>
+          <div class="item-overlay">
+            <h3>Brochure front</h3>
+            <p>one of the projects in Multimedia subject</p>
+            <a href="attributes/brochuref.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/brochureb.png" alt="issue4">
+          </div>
+          <div class="item-overlay">
+            <h3>Brochure back</h3>
+            <p>one of the projects in Multimedia subject</p>
+            <a href="attributes/brochureb.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/molliepic.png" alt="issue4">
+          </div>
+          <div class="item-overlay">
+            <h3>Digital Commerce</h3>
+            <p>one of the projects in Digital Commerce</p>
+            <a href="attributes/molliepic.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/marilaopic.png" alt="issue4">
+          </div>
+          <div class="item-overlay">
+            <h3>Marilao</h3>
+            <p>trip lang</p>
+            <a href="attributes/marilaopic.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/jadescreampic.png" alt="issue4">
+          </div>
+          <div class="item-overlay">
+            <h3>AAAAAAAAAAAA</h3>
+            <p>trip lang</p>
+            <a href="attributes/jadescreampic.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+      </div>
+    
+    </section>
+
+    <!-- Photography Section -->
+    <section id="photos" class="portfolio-section">
+      <div class="section-header">
+        <h2>Photography</h2>
+        <p class="section-description">A collection of my best photographic work, capturing moments and scenes with artistic vision.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/sunflowerphotog.png" alt="Sunflower Photography">
+          </div>
+          <div class="item-overlay">
+            <h3>Sunflower</h3>
+            <p>Nature Photography</p>
+            <a href="attributes/sunflowerphotog.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/photog1.png" alt="Photography Work 1">
+          </div>
+          <div class="item-overlay">
+            <h3>Landscape View</h3>
+            <p>Scenic Photography</p>
+            <a href="attributes/photog1.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item-image">
+            <img src="attributes/photog2.png" alt="Photography Work 2">
+          </div>
+          <div class="item-overlay">
+            <h3>Nature's Beauty</h3>
+            <p>Nature Photography</p>
+            <a href="attributes/photog2.png" class="view-project" data-type="image">View Full Size</a>
+          </div>
+        </div>
+      </div>
+      <div class="more-link">
+        <a href="https://www.instagram.com/jedediahlrnz" target="_blank">Click here for more photos →</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Jedediah Lorenzo Mercado.</p>
+    <div class="footer-links">
+      <a href="about.html">about</a>
+      <a href="portfolio.html">portfolio</a>
+      <a href="contact.html">contact</a>
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/fadearcade" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/jedediah.lorenzo" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/jedediahlrnz" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <button id="backToTop">↑</button>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <div class="lightbox-content">
+      <img id="lightbox-image" src="" alt="">
+      <video id="lightbox-video" controls>
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <script src="xmlLoader.js"></script>
+  <script>
+    // Back to Top button functionality
+    const backToTopButton = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxVideo = document.getElementById('lightbox-video');
+    const closeLightbox = document.querySelector('.close-lightbox');
+
+    // Handle project clicks
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('.view-project')) {
+        const link = e.target.closest('.view-project');
+        const type = link.dataset.type;
+        
+        // Only use lightbox for images and videos, not for external links
+        if (type === 'video' || type === 'image') {
+          e.preventDefault();
+          const source = link.getAttribute('href');
+
+          lightbox.classList.add('active');
+          
+          if (type === 'video') {
+            lightboxVideo.style.display = 'block';
+            lightboxImage.style.display = 'none';
+            lightboxVideo.querySelector('source').src = source;
+            lightboxVideo.load(); // Reload video with new source
+          } else {
+            lightboxImage.style.display = 'block';
+            lightboxVideo.style.display = 'none';
+            lightboxImage.src = source;
+          }
+        }
+        // For external links (websites), let the browser handle the navigation normally
+      }
+    });
+
+    // Close lightbox
+    closeLightbox.addEventListener('click', () => {
+      lightbox.classList.remove('active');
+      lightboxVideo.pause(); // Stop video playback when closing
+    });
+
+    // Close lightbox on outside click
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+        lightboxVideo.pause();
+      }
+    });
+
+    // Close lightbox on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        lightbox.classList.remove('active');
+        lightboxVideo.pause();
+      }
+    });
+
+    // Auto-play Minsan sa MCU video if coming from index page
+    document.addEventListener('DOMContentLoaded', function() {
+      // Check if URL has #videos hash (coming from index page)
+      if (window.location.hash === '#videos') {
+        // Find the Minsan sa MCU video link
+        const minsanVideoLink = document.querySelector('a[href="attributes/something about mcu final1.mp4"]');
+        if (minsanVideoLink) {
+          // Simulate click on the video link to open lightbox
+          setTimeout(() => {
+            minsanVideoLink.click();
+          }, 500); // Small delay to ensure page is fully loaded
+        }
+      }
+    });
+
+    // Portfolio filtering
+    document.addEventListener('DOMContentLoaded', function() {
+      const navButtons = document.querySelectorAll('.nav-button');
+      const portfolioSections = document.querySelectorAll('.portfolio-section');
+
+      // Show all sections initially
+      function showAllSections() {
+        portfolioSections.forEach(section => {
+          section.style.display = 'block';
+        });
+      }
+
+      // Show specific section
+      function showSection(categoryId) {
+        portfolioSections.forEach(section => {
+          if (categoryId === 'all' || section.id === categoryId) {
+            section.style.display = 'block';
+            // Add fade-in animation
+            section.style.opacity = '0';
+            setTimeout(() => {
+              section.style.opacity = '1';
+            }, 50);
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      }
+
+      navButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Update active button
+          navButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+
+          // Show/hide sections
+          const category = button.dataset.category;
+          if (category === 'all') {
+            showAllSections();
+          } else {
+            showSection(category);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

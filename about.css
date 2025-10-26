@@ -1,0 +1,380 @@
+/* Steam-like Profile Styles */
+body {
+  background-image: url('attributes/swirly4.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Blur only the background, not the content */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('attributes/swirly4.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(25px);
+  z-index: -1;
+}
+
+/* GIF background - no animation needed */
+
+/* Background effects removed */
+
+/* Profile Header */
+.profile-header {
+  background: rgba(62, 2, 58, 0.621);
+  backdrop-filter: blur(5px);
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-main {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.profile-info .location {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-info .name {
+  color: #00aced;
+}
+
+/* Content Section */
+.stats-section {
+  padding: 0 20px 60px;
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(13, 0, 34, 0.74);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stats-header {
+  margin-bottom: 40px;
+}
+
+.stats-header h2 {
+  color: #00aced;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.stats-header p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Other Interests Section */
+.other-interests {
+  margin: 40px 0;
+}
+
+.other-interests h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.interests-carousel-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 40px;
+}
+
+.interests-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.interests-carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.interests-carousel-item.active {
+  opacity: 1;
+}
+
+.interest-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.interest-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.interest-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  backdrop-filter: blur(5px);
+  border-radius: 0 0 20px 20px;
+}
+
+.interest-content h4 {
+  font-size: 1.8rem;
+  margin: 0 0 10px 0;
+  color: #00aced;
+}
+
+.interest-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.interests-carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.interests-carousel-button:hover {
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.interests-carousel-button.prev {
+  left: 10px;
+}
+
+.interests-carousel-button.next {
+  right: 10px;
+}
+
+.interests-carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.interests-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.interests-dot.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+/* Skills Section */
+.skills-section {
+  margin: 40px 0;
+}
+
+.skills-section h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.skill-card {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 0, 0, 0.4);
+  border-color: #00aced;
+}
+
+.skill-card i {
+  font-size: 2.5rem;
+  color: #00aced;
+  margin-bottom: 20px;
+}
+
+.skill-card h4 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+/* Education Section */
+.education-section {
+  margin-top: 50px;
+}
+
+.education-section h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.education-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education-card {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #00aced;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.education-card:hover {
+  transform: translateX(10px);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.education-card h4 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.education-card p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 5px 0;
+}
+
+.education-card .year {
+  color: #00aced;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .skill-bar:hover,
+  .education-card:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-info h1 {
+    font-size: 2.5rem;
+  }
+
+  .stats-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .skills-showcase h3,
+  .education-section h3 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Jedediah Lorenzo Mercado</title>
+  <link rel="icon" type="image/png" href="attributes/cat.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo-link"><img src="attributes/lmao.png" alt="logo"></a>
+    <nav>
+      <div class="nav-links">
+        <a href="about.html">about</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="contact.html" class="active">contact</a>
+      </div>
+    </nav>
+    <div class="socials">
+      <a href="https://github.com/fadearcade" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/jedediah.lorenzo" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/jedediahlrnz" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </header>
+
+  <!-- Animated Background -->
+  <div class="animated-background">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+      <div class="shape shape-6"></div>
+      <div class="shape shape-7"></div>
+      <div class="shape shape-8"></div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h1>Let's Connect</h1>
+        <p class="contact-description">Feel free to reach out for collaborations, questions, or just to say hello!</p>
+        
+        <div class="social-links">
+          <a href="https://www.instagram.com/jedediahlrnz" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://github.com/fadearcade" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.facebook.com/jedediah.lorenzo" target="_blank" class="social-link">
+            <i class="fab fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+        </div>
+
+        <div class="contact-details">
+          <div class="detail-item">
+            <i class="fas fa-envelope"></i>
+            <span>jedediahmercado@gmail.com</span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Apalit, Pampanga, Philippines</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Jedediah Lorenzo Mercado.</p>
+    <div class="footer-links">
+      <a href="about.html">about</a>
+      <a href="portfolio.html">portfolio</a>
+      <a href="contact.html">contact</a>
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/fadearcade" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/jedediah.lorenzo" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/jedediahlrnz" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <button id="backToTop">↑</button>
+
+  <script src="xmlLoader.js"></script>
+  <script>
+    // Back to Top button functionality
+    const backToTopButton = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolio>
+    <!-- Profile Information -->
+    <profile>
+        <name>Jedediah L. Mercado</name>
+        <tagline>Hey! Here's Everything About me!</tagline>
+        <about>
+            <paragraph>Hello! As I have already said, I'm Jedediah L. Mercado. I'm 23 Years Old and I'm currently a 4th Year IT student(Irregular) at Manila Central University. I'm passionate about creative web design and multimedia development. I specialize in creating engaging digital experiences that combine technical precision with artistic flair.</paragraph>
+            <paragraph>When im not doing anything, I usually spend my time playing PC games, watching series or movies, spending time with my loved ones, or just reading articles on social media.</paragraph>
+            <paragraph>I believe in many things in this world. But the thing that I mostly believe in is that change is inevitable and adapting is the only way to go forward.</paragraph>
+        </about>
+    </profile>
+    
+    <!-- Home Page Content -->
+    <home>
+        <hero>
+            <left-title>Editor</left-title>
+            <left-description>Specializing on video editing and managing youtube pages</left-description>
+            <right-title>IT&nbsp;Student</right-title>
+            <right-description>IT Student specializing in creative web design and multimedia.</right-description>
+            <profile-image>attributes/me.png</profile-image>
+        </hero>
+        <carousel>
+            <item>
+                <title>Mock ACTEC Website</title>
+                <description>HTML &amp; CSS practice project.</description>
+                <image>attributes/actecsc.png</image>
+                <link>https://fadearcade.github.io/ACTEC.github.io/</link>
+                <external>true</external>
+            </item>
+            <item>
+                <title>CILS</title>
+                <description>CS/IT Laboratory Scheduler(CILS)</description>
+                <image>attributes/cilscarouselpic.png</image>
+                <link>#</link>
+                <external>false</external>
+            </item>
+            <item>
+                <title>Minsan sa MCU</title>
+                <description>a video project from my Advanced Multimedia subject</description>
+                <image>attributes/minsancarouselpic.png</image>
+                <link>#</link>
+                <external>false</external>
+            </item>
+        </carousel>
+    </home>
+    
+    <!-- Skills Section -->
+    <skills>
+        <skill>
+            <name>Web Development</name>
+            <icon>fas fa-code</icon>
+            <technologies>HTML, CSS, JavaScript, PHP, MySQL</technologies>
+        </skill>
+        <skill>
+            <name>Video Editing</name>
+            <icon>fas fa-video</icon>
+            <technologies>Capcut, Inshot, Adobe Premiere Pro</technologies>
+        </skill>
+        <skill>
+            <name>Design</name>
+            <icon>fas fa-paint-brush</icon>
+            <technologies>Photoshop, Canva</technologies>
+        </skill>
+    </skills>
+    
+    <!-- Interests Section -->
+    <interests>
+        <interest>
+            <type>Swimmer</type>
+            <image>attributes/swimmerjed.jpg</image>
+            <description>I was once a passionate swimmer before the pandemic hit us.</description>
+        </interest>
+        <interest>
+            <type>Musician</type>
+            <image>attributes/jedsinger.jpg</image>
+            <description>I am one of the vocalists in MCU Band.</description>
+        </interest>
+        <interest>
+            <type>Caregiver</type>
+            <image>attributes/jedcaregiver.png</image>
+            <description>NCII certified caregiver</description>
+        </interest>
+        <interest>
+            <type>Amateur Photographer</type>
+            <image>attributes/sunflowerphotog.png</image>
+            <description>I like taking landscape photos of nature and other things.</description>
+        </interest>
+    </interests>
+    
+    <!-- Education Section -->
+    <education>
+        <degree>
+            <title>Basic Education</title>
+            <institution>Manila Central University</institution>
+            <period>2011 - 2020</period>
+        </degree>
+        <degree>
+            <title>Doctor of Optometry</title>
+            <institution>Manila Central University</institution>
+            <period>2020 - 2023</period>
+        </degree>
+        <degree>
+            <title>Caregiver NCII holder</title>
+            <institution>Asian Caregiving and Technology Education Center</institution>
+            <period>2023 - 2023</period>
+        </degree>
+        <degree>
+            <title>Bachelor of Science in Information Technology</title>
+            <institution>Manila Central University</institution>
+            <period>2023 - Present</period>
+        </degree>
+    </education>
+    
+    <!-- Portfolio Projects -->
+    <portfolio>
+        <websites>
+            <project>
+                <title>Mock ACTEC Website</title>
+                <description>HTML &amp; CSS practice project</description>
+                <image>attributes/actecsc.png</image>
+                <link>https://fadearcade.github.io/ACTEC.github.io/</link>
+                <external>true</external>
+            </project>
+            <project>
+                <title>CILS</title>
+                <description>CS/IT Laboratory Scheduler</description>
+                <image>attributes/cilscarouselpic.png</image>
+                <link>#</link>
+                <external>false</external>
+            </project>
+            <project>
+                <title>HTML Testing Website</title>
+                <description>HTML practice project</description>
+                <image>attributes/firstwebsc.png</image>
+                <link>https://fadearcade.github.io/1stestweb/</link>
+                <external>true</external>
+            </project>
+        </websites>
+        
+        <videos>
+            <project>
+                <title>Minsan sa MCU</title>
+                <description>Advanced Multimedia project</description>
+                <image>attributes/minsancarouselpic.png</image>
+                <link>attributes/something about mcu final1.mp4</link>
+                <type>video</type>
+            </project>
+            <project>
+                <title>MCU Ads</title>
+                <description>Advanced Multimedia project</description>
+                <image>attributes/ads.png</image>
+                <link>attributes/MCU_IT_Ad_FinalProject_Mercado.mp4</link>
+                <type>video</type>
+            </project>
+            <project>
+                <title>Advanced Multimedia Camera Movements</title>
+                <description>Advanced Multimedia project</description>
+                <image>attributes/benandren.png</image>
+                <link>attributes/AdvancedMultimediaCameraMovementsNofilter.mp4</link>
+                <type>video</type>
+            </project>
+            <project>
+                <title>Advanced Multimedia Reels</title>
+                <description>Advanced Multimedia project</description>
+                <image>attributes/casweek.png</image>
+                <link>attributes/Advanced Multimedia Reels (Final).mp4</link>
+                <type>video</type>
+            </project>
+            <project>
+                <title>A day in a life</title>
+                <description>Advanced Multimedia project</description>
+                <image>attributes/adial.png</image>
+                <link>attributes/Mercado_Villado-A day in a life.mp4</link>
+                <type>video</type>
+            </project>
+        </videos>
+        
+        <visuals>
+            <project>
+                <title>Siklab</title>
+                <description>siklab event poster</description>
+                <image>attributes/siklabpic.png</image>
+                <link>attributes/siklabpic.png</link>
+                <type>image</type>
+            </project>
+            <project>
+                <title>Robotics seminar</title>
+                <description>poster for the robotics seminar</description>
+                <image>attributes/roboticspic.png</image>
+                <link>attributes/roboticspic.png</link>
+                <type>image</type>
+            </project>
+            <project>
+                <title>Baller Samson</title>
+                <description>Patrick Samson poster</description>
+                <image>attributes/ballersamsonpic.png</image>
+                <link>attributes/ballersamsonpic.png</link>
+                <type>image</type>
+            </project>
+            <project>
+                <title>mock magazine issue 1</title>
+                <description>one of my hobbies is to create my own magazine issues</description>
+                <image>attributes/issue1.png</image>
+                <link>attributes/issue1.png</link>
+                <type>image</type>
+            </project>
+            <project>
+                <title>Issue 2</title>
+                <description>one of my hobbies is to create my own magazine issues</description>
+                <image>attributes/issue2.png</image>
+                <link>attributes/issue2.png</link>
+                <type>image</type>
+            </project>
+            <project>
+                <title>Issue 3</title>
+                <description>one of my hobbies is to create my own magazine issues</description>
+                <image>attributes/issue3.png</image>
+                <link>attributes/issue3.png</link>
+                <type>image</type>
+            </project>
+            <project>
+                <title>Issue 4</title>
+                <description>one of my hobbies is to create my own magazine issues</description>
+                <image>attributes/issue4.png</image>
+                <link>attributes/issue4.png</link>
+                <type>image</type>
+            </project>
+            <project>
+                <title>Brochure front</title>
+                <description>one of the projects in Multimedia subject</description>
+                <image>attributes/brochuref.png</image>
+                <link>attributes/brochuref.png</link>
+                <type>image</type>
+            </project>
+            <project>
+                <title>Brochure back</title>
+                <description>one of the projects in Multimedia subject</description>
+                <image>attributes/brochureb.png</image>
+                <link>attributes/brochureb.png</link>
+                <type>image</type>
+            </project>
+            <project>
+                <title>Digital Commerce</title>
+                <description>one of the projects in Digital Commerce</description>
+                <image>attributes/molliepic.png</image>
+                <link>attributes/molliepic.png</link>
+                <type>image</type>
+            </project>
+            <project>
+                <title>Marilao</title>
+                <description>trip lang</description>
+                <image>attributes/marilaopic.png</image>
+                <link>attributes/marilaopic.png</link>
+                <type>image</type>
+            </project>
+            <project>
+                <title>AAAAAAAAAAAA</title>
+                <description>trip lang</description>
+                <image>attributes/jadescreampic.png</image>
+                <link>attributes/jadescreampic.png</link>
+                <type>image</type>
+            </project>
+        </visuals>
+        
+        <photos>
+            <project>
+                <title>Sunflower</title>
+                <description>Nature Photography</description>
+                <image>attributes/sunflowerphotog.png</image>
+                <link>attributes/sunflowerphotog.png</link>
+                <type>image</type>
+            </project>
+            <project>
+                <title>Landscape View</title>
+                <description>Scenic Photography</description>
+                <image>attributes/photog1.png</image>
+                <link>attributes/photog1.png</link>
+                <type>image</type>
+            </project>
+            <project>
+                <title>Nature's Beauty</title>
+                <description>Nature Photography</description>
+                <image>attributes/photog2.png</image>
+                <link>attributes/photog2.png</link>
+                <type>image</type>
+            </project>
+        </photos>
+    </portfolio>
+    
+    <!-- Contact Information -->
+    <contact>
+        <title>Let's Connect</title>
+        <description>Feel free to reach out for collaborations, questions, or just to say hello!</description>
+        <email>jedediahmercado@gmail.com</email>
+        <location>Apalit, Pampanga, Philippines</location>
+        <social-links>
+            <social>
+                <platform>Instagram</platform>
+                <icon>fab fa-instagram</icon>
+                <url>https://www.instagram.com/jedediahlrnz</url>
+            </social>
+            <social>
+                <platform>GitHub</platform>
+                <icon>fab fa-github</icon>
+                <url>https://github.com/fadearcade</url>
+            </social>
+            <social>
+                <platform>Facebook</platform>
+                <icon>fab fa-facebook</icon>
+                <url>https://www.facebook.com/jedediah.lorenzo</url>
+            </social>
+        </social-links>
+        <external-links>
+            <link>
+                <title>More Videos</title>
+                <url>https://www.youtube.com/@ACTEConeTV</url>
+                <category>videos</category>
+            </link>
+            <link>
+                <title>More Photos</title>
+                <url>https://www.instagram.com/jedediahlrnz</url>
+                <category>photos</category>
+            </link>
+        </external-links>
+    </contact>
+    
+    <!-- Site Information -->
+    <site>
+        <title>Jedediah Lorenzo Mercado</title>
+        <logo>attributes/lmao.png</logo>
+        <profile-image>attributes/aboutme.jpg</profile-image>
+        <copyright>© 2025 Jedediah Lorenzo Mercado. All rights reserved.</copyright>
+    </site>
+</portfolio>

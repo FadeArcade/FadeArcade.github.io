@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jedediah Mercado | Portfolio</title>
+  <link rel="icon" type="image/png" href="attributes/cat.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo-link"><img src="attributes/lmao.png" alt="logo"></a>
+    <nav>
+      <div class="nav-links">
+        <a href="about.html">about</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="contact.html">contact</a>
+      </div>
+    </nav>
+    <div class="socials">
+      <a href="https://github.com/fadearcade" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/jedediah.lorenzo" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/jedediahlrnz" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="left">
+      <h1>Editor</h1>
+      <p>Specializing on video editing and managing youtube pages</p>
+    </div>
+    <div class="center">
+      <a href="about.html" class="profile-link">
+        <img src="attributes/me.png" alt="Your Picture">
+      </a>
+    </div>
+    <div class="right">
+      <h1>IT&nbsp;Student</h1>
+      <p>IT Student specializing in creative web design and multimedia.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="portfolio" class="portfolio">
+    <h2>Some of My Latest Work</h2>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-item">
+          <a href="https://fadearcade.github.io/ACTEC.github.io/" target="_blank" class="carousel-link">
+            <img src="attributes/actecsc.png" alt="ACTEC Website">
+            <div class="carousel-content">
+              <h3>Mock ACTEC Website</h3>
+              <p>HTML & CSS practice project.</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="https://fadearcade.github.io/cilsstaticversion/" target="_blank" class="carousel-link">
+            <img src="attributes/cilscarouselpic.png" alt="Project 2">
+            <div class="carousel-content">
+              <h3>CILS</h3>
+              <p>CS/IT Laboratory Scheduler(CILS) #static version</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="portfolio.html#videos" class="carousel-link">
+            <img src="attributes/minsancarouselpic.png" alt="minsansamcu">
+            <div class="carousel-content">
+              <h3>Minsan sa MCU</h3>
+              <p>a video project from my Advanced Multimedia subject</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button class="carousel-button prev">&#10094;</button>
+      <button class="carousel-button next">&#10095;</button>
+      <div class="carousel-dots"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Jedediah Lorenzo Mercado.</p>
+    <div class="footer-links">
+      <a href="about.html">about</a>
+      <a href="portfolio.html">portfolio</a>
+      <a href="contact.html">contact</a>
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/fadearcade" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/jedediah.lorenzo" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/jedediahlrnz" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <button id="backToTop">↑</button>
+
+  <script src="xmlLoader.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousel = document.querySelector('.carousel');
+      const items = carousel.querySelectorAll('.carousel-item');
+      const dotsContainer = document.querySelector('.carousel-dots');
+      const prevButton = document.querySelector('.carousel-button.prev');
+      const nextButton = document.querySelector('.carousel-button.next');
+      let currentIndex = 0;
+
+      // Create dots
+      items.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+      });
+
+      // Show first slide
+      items[0].classList.add('active');
+
+      // Previous slide
+      prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        updateSlides();
+      });
+
+      // Next slide
+      nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % items.length;
+        updateSlides();
+      });
+
+      function goToSlide(index) {
+        currentIndex = index;
+        updateSlides();
+      }
+
+      function updateSlides() {
+        items.forEach(item => item.classList.remove('active'));
+        items[currentIndex].classList.add('active');
+        
+        const dots = dotsContainer.querySelectorAll('.dot');
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[currentIndex].classList.add('active');
+      }
+
+      // Auto advance slides
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % items.length;
+        updateSlides();
+      }, 5000);
+    });
+  </script>
+</body>
+</html>
